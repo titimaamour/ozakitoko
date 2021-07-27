@@ -1,0 +1,190 @@
+*{
+     padding:0;
+     margin: 0;
+     box-sizing: border-box;
+     /* border: 1px solid black; */
+}
+body{
+     margin-right: 75px;
+     margin-left: 75px;
+}
+/* HEADER */
+header{
+     display: grid;
+     grid-template-rows: 100px 50px;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #c6c6c6;
+
+
+}
+.spacer150{
+     height: 150px;
+}
+#logo{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+a{
+     color: inherit;
+     text-decoration: inherit;
+}
+#menu{
+     display: flex;
+     justify-content: space-around;
+     align-items:center;
+}
+#menu a{
+     border: 1px solid #c6c6c6;
+     border-radius: 2px;
+     font-weight: 550;
+     padding: 10px 25px;
+     color: lightcoral;
+}
+#menu a:hover{
+     background-color: lightcoral;
+     color: white;
+     transition: 0.3s ease-in;
+}
+
+/* INDEX */
+.section{
+     margin: 20px 0px;
+}
+#mainImg{
+     height: 75vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-image: url("../img/bg1.jpg");
+     background-position: center;
+     background-size: auto;
+     color: white;
+     font-weight: bold;
+}
+#topProduit{
+     background-color: lightcoral;
+     height: 30vh;
+     border-radius: 10px;
+     display: grid;
+     grid-template-columns: 30vw 1fr;
+     overflow: hidden;
+}
+.topText{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 50px;
+     text-align: center;
+     color: white;
+}
+.topText button{
+     padding: 10px 30px;
+     font-weight: bold;
+     background-color: transparent;
+     border: 2px solid white;
+     color: white;
+     margin-top: 20px;
+}
+
+#gridProduit{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 20px;
+}
+#gridProduit a >*{
+     text-align: center;
+     margin: 5px 10px;
+}
+#gridProduit a:hover .voir{
+     color: lightcoral;
+     text-decoration: underline;
+}
+
+.produitImgBig{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.infoProduit{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+}
+#formulaire{
+     height: 75vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     margin: 0;
+}
+#formulaire form{
+     padding: 20px;
+}
+.formChild >*{
+     display: block;
+}
+.formChild input:not(input[type='submit']), textarea{
+     padding: 20px ;
+     margin: 10px;
+     width: 75%;
+     border-radius: 10px;
+     border:1px solid #c6c6c6;
+}
+.formChild input[type="submit"], .btn-one, .btn-admin{
+     width: 200px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     background-color: lightcoral;
+     color: white;
+     border: none;
+     margin: 20px;
+}
+.btn-admin{
+     background-color: grey;
+}
+.cacher{
+     display: none !important;
+}
+.option{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+.option a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+}
+.option a .btn-admin{
+     width: 50%;
+     border-radius: 10px;
+     padding: 5px 20px;
+     background-color: lightcoral;
+     color: white;
+     font-weight: bold;
+}
+.listeTable{
+     width: 100%;
+}
+.image{
+     background-image: url('../img/connexion.jpg');
+     background-size: cover;
+}
+.headerRow{
+     background-color: lightcoral;
+}
+table th{
+     background-color: lightcoral;
+     padding: 10px 5px;
+     border-right: 1px solid grey;
+     color: white;
+}
+table td{
+     padding: 5px;
+}
+table tr{
+     border: 5px solid black !important;     
+}
